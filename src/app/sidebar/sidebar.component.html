@@ -1,0 +1,25 @@
+<ul class="layout-menu">
+  <li *ngFor="let MenuList of MenuLists">
+    <a href="#">{{ MenuList }}</a>
+  </li>
+</ul>
+
+<input (input)="Oninput($event)" type="text" placeholder="Enter your name" />
+<br />
+<p>Hello :{{ this.Name }}</p>
+
+<button (click)="OnDecrement()">-</button>
+<span> {{ availableItem }} </span>
+<button (click)="OnIncrement()">+</button>
+
+
+
+
+<div class="card flex justify-center">
+   <p-datepicker [(ngModel)]="date">
+        <ng-template #date let-date>
+            <strong *ngIf="date.day > 10 && date.day < 15; else elseBlock" style="text-decoration: line-through">{{ date.day }}</strong>
+            <ng-template #elseBlock>{{ date.day }}</ng-template>
+        </ng-template>
+    </p-datepicker>
+</div>

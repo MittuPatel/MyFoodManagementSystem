@@ -1,0 +1,41 @@
+.topnav {
+  background-color: rgb(85, 106, 190);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.right {
+  float: right;
+  padding: 6px 5px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+img.img-responsive {
+  /* size: 7px 7px; */
+  width: 40px;
+  height: 43px;
+  padding: 1px 0px;
+  position: center;
+}
+
+.image-left {
+  float: left;
+  /* size: 6px 10px; */
+  padding: 1px 7px;
+}
